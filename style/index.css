@@ -4,6 +4,13 @@
     padding: .5rem;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -12,4 +19,20 @@ body {
 .container{
     width: 100%;
     max-width: 1024px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
