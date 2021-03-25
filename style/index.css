@@ -1,1 +1,131 @@
-/* Add CSS styling here */
+*{
+    /* margin: .5rem;
+    border: 1px solid purple;
+    padding: .5rem; */
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1024px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    border: 1px solid black;
+}
+
+nav .selected {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    background-image: url("https://source.unsplash.com/random/800x400");
+}
+
+button {
+    display: flex;
+    width: 15rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: .5rem;
+    background: rgba(111, 65, 161, .7);
+    color: white;
+    font-size: 1.25rem;
+}
+
+.projects {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects article {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #3a2254;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav a {
+        width: 50%;
+        text-align: center;
+    }
+    .cta {
+        width: 100%;
+    }
+    .projects {
+        justify-content: space-evenly;
+    }
+
+    .projects article {
+        width: 40%;
+    }
+    .projects article img {
+        width: 100%;
+    }
+    button {
+        width: 10rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
