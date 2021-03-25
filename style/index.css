@@ -83,6 +83,7 @@ button {
     width: 30%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -91,4 +92,40 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav a {
+        width: 50%;
+        text-align: center;
+    }
+    .cta {
+        width: 100%;
+    }
+    .projects {
+        justify-content: space-evenly;
+    }
+
+    .projects article {
+        width: 40%;
+    }
+    .projects article img {
+        width: 100%;
+    }
+    button {
+        width: 10rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
 }
